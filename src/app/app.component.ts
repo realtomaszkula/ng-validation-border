@@ -2,9 +2,18 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `
+  <app-template-forms-example></app-template-forms-example>
+  <app-reactive-forms-example></app-reactive-forms-example>
+  `,
+  styles: [
+    `
+      :host {
+        display: block;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+    `
+  ]
 })
-export class AppComponent {
-  title = 'app';
-}
+export class AppComponent {}
